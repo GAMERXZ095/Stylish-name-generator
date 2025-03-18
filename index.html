@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generate stylish game names with our free Game Name Generator tool. Create unique single or double name styles for gaming profiles!">
+  <meta name="keywords" content="game name generator, stylish game names, gaming profile names, name styling tool, free game name creator, single name generator, double name generator">
+  <meta name="author" content="Your Name">
+  <title>Stylish Game Name Generator - Create Unique Gaming Names</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">Game Name Generator</a>
+      <ul class="navbar-menu">
+        <li><a href="#" class="navbar-link">Home</a></li>
+        <li><a href="#" class="navbar-link">Post</a></li>
+        <li><a href="#" class="navbar-link">Contact Us</a></li>
+        <li><a href="#" class="navbar-link">About Us</a></li>
+      </ul>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Loading Animation -->
+  <div class="loading-animation" id="loadingAnimation">
+    <div class="loader"></div>
+    <p>Loading stylish game name styles...</p>
+  </div>
+  
+  <!-- Main Content -->
+  <main class="container" id="mainContent" style="display: none;">
+    <h1>Stylish Game Name Generator</h1>
+    <p id="description">Create unique and stylish names for your gaming profiles with ease!</p>
+    <div class="mode-toggle">
+      <button id="singleNameMode" class="mode-button active">Single Name</button>
+      <button id="doubleNameMode" class="mode-button">Double Name</button>
+    </div>
+    <section class="input-container">
+      <!-- Single Name Input -->
+      <div id="singleNameInput" class="name-input">
+        <input type="text" id="nameInput" placeholder="Enter your gaming name" maxlength="20" aria-label="Enter your gaming name">
+      </div>
+      <!-- Double Name Input -->
+      <div id="doubleNameInput" class="name-input" style="display: none;">
+        <input type="text" id="nameInput1" placeholder="Enter first gaming name" maxlength="20" aria-label="Enter first gaming name">
+        <input type="text" id="nameInput2" placeholder="Enter second gaming name" maxlength="20" aria-label="Enter second gaming name">
+      </div>
+      <p class="error-message" id="errorMessage" style="display: none;">Please enter all names for your stylish game name!</p>
+    </section>
+    <div class="name-bar">
+      <span id="styledName" aria-live="polite">Player</span>
+      <button id="copyButton" title="Copy stylish game name to clipboard" aria-label="Copy stylish game name">📋</button>
+    </div>
+    <section class="feedback-buttons">
+      <button id="likeButton" class="feedback-button"><i class="fas fa-thumbs-up"></i> Like</button>
+      <button id="dislikeButton" class="feedback-button"><i class="fas fa-thumbs-down"></i> Dislike</button>
+    </section>
+    <section class="styles-container">
+      <h2>Choose a Stylish Game Name Style:</h2>
+      <div id="stylesList" aria-label="List of stylish game name options"></div>
+      <button id="loadMoreButton" class="load-more-button">Load More Styles</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
